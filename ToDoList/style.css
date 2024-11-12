@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders don't affect element size */
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 60px 150px 80px 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+    height: 100vh;
+
+    background: linear-gradient(#e66465, #9198e5);
+
+}
+/*
+.header, .tasks, .bg-options, .input {
+    border: 2px solid black;
+}
+
+*/
+.header-text {
+    font-size: 100px;
+    
+    font-family: "Rubik Bubbles";
+    text-align: center;
+    font-weight: bold;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); /* Gradient from pink to orange */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent;
+}
+
+.input {
+    display: flex;            /* Enable flexbox layout */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    
+}
+
+#input-task {
+    height: 60%;
+    width: 25%;
+    padding-left: 10px;
+    border: none;
+    color: #e66465;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    font-family: "Rubik Bubbles";
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);   
+}
+
+#input-task::placeholder {
+    color: #e66465;
+    
+}
+
+
+#input-task:focus {
+    outline: none; /* Removes the default outline */
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    transition: background-image 0.5s ease-in;
+}
+
+#button-task {
+    height: 60%;
+    width: 5%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: "Rubik Bubbles";
+
+}
+
+#button-task:hover {
+    box-shadow: 0 4px 8px rgba(60, 97, 112, 0.2);
+    cursor: pointer;
+}
+
+
+
+.bg-button {
+    border: 1px solid seashell;
+    padding: 20px;
+    border-radius: 20px;
+    float:right;
+    margin:5px
+}
+
+#light {
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+}
+
+#dark {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+#colorful {
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+#input-text {
+    float:right;
+}
