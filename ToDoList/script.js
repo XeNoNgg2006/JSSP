@@ -1,12 +1,12 @@
 const input = document.getElementById("input-task");
 const addButton = document.getElementById("button-task");
-const itemList = document.getElementById("item-list")
+const itemList = document.getElementById("ul-task")
 
 const lightButton =document.getElementById("light");
 const darkButton = document.getElementById("dark");
 const colurfulButton = document.getElementById("colorful");
 
-addButton.addEventListener("click", function(){
+function addTask(){
     console.log("Button clicked!");
     const itemText = input.value;
 
@@ -21,4 +21,13 @@ addButton.addEventListener("click", function(){
     itemList.appendChild(listItem);
 
     input.value = "";
+}
+
+addButton.addEventListener("click", addTask);
+
+
+input.addEventListener("keypress", function(event){
+    if(event.key === "Enter") {
+        addTask();
+    }
 });
