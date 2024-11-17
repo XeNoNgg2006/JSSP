@@ -57,7 +57,7 @@ taskList.addEventListener('click', function(event) {
 
     if (event.target && event.target.classList.contains('checkbox-input')) {
         
-        const taskText = event.target.closest('li')
+        const taskText = event.target.closest('li');
         
         
         if (taskText) {
