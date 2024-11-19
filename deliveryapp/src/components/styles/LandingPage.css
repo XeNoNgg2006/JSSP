@@ -1,4 +1,28 @@
+.landing-page {
+    margin: 0;
+}
+
+
 h1 {
     text-align: center;
-    
+    color: aliceblue;
+}
+
+
+.main {
+    display: flex;
+    height:70vh ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+    /*background-image: url("../../../public/bg-sushi1.jpg");*/
+    background-color:cadetblue;
+    opacity: 0.7;
+    align-content: center;
+    justify-content: center;
+}
+
+.main, .delivery-window, .delivery-method-div, .delivery-method {
+    border: 2px solid black;
 }
