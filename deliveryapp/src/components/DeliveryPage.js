@@ -6,7 +6,7 @@ function DeliveryPage() {
     return(
         <div>
         <Header/>
-        <main>
+        <main className="delivery__main">
             <h1>f</h1>
         </main>
         <Footer/>

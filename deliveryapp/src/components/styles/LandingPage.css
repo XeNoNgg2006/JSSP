@@ -12,16 +12,14 @@ h1 {
 }
 
 
-.main {
+.lp__main {
     display: flex;
     height:75vh ;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    
     justify-content: center;
     background-image: url("./../../../public/kebab-bg.jpg");
-
     background-origin: padding-box;
     background-size: cover;
     background-position: top;
@@ -29,12 +27,9 @@ h1 {
     opacity: 0.7;
     
 }
-/*
-.main, .delivery-window, .delivery-methods-container, .delivery-method {
-    border: 2px solid black;
-}*/
 
-.delivery-window {
+
+.lp__order-window {
     width: 30vw;
     height: 50vh;
     display: grid;
@@ -48,14 +43,22 @@ h1 {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
-.delivery-methods-container {
+.lp__order-window__header {
+    align-self: center;
+    font-size: 4vh;
+    color: black;
+    
+}
+
+
+.lp__ordering-methods__container {
     display: grid;
     grid-template-columns: 45% 45%;
-    grid-template-rows: 100%;
+    grid-template-rows: 98%;
     gap: 10%;
 }
 
-.delivery-method {
+.lp__order-method {
     width: 100%;
     height: auto;
     color: rgb(134, 134, 212);
@@ -69,21 +72,70 @@ h1 {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }   
 
-.delivery-method.pickup {
+.lp__order-method.delivery {
+    margin-left: 15px;
+ }
+ 
+ .lp__order-method.delivery:active {
+     padding: 1%;
+ }
+ 
+ .lp__order-method.delivery:hover {
+     filter: brightness(80%);
+ }
+ 
+ 
+ 
+ .lp__method-delivery__text {
+     background-color: #175f92;
+     color: black;
+     font-size: clamp(1em, 2.5vw, 4em);
+     padding-top: 5%;
+     height: 100%;
+     width: 100%;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ }
+ 
+ .lp__method-delivery__img {
+     background-color: #175f92;
+     height: 70%;
+     width: 100%;
+     padding-top: 5%;
+     object-fit: contain;
+     justify-self: center;
+     padding-bottom: 40%;
+ }
+ 
+ 
+ .lp__delivery-continue__icon {
+     padding-top: 1%;
+     height: 100%;
+     width: 100%;
+     object-fit: contain;
+     background-color: #09273c;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     padding-bottom: 1%;
+ }
+ 
+
+
+.lp__order-method.pickup {
     margin-right: 0px;
     
 }
 
-.delivery-method.pickup:active {
+.lp__order-method.pickup:active {
     padding: 1%;
 }
 
-.delivery-method.pickup:hover {
+.lp__order-method.pickup:hover {
     filter: brightness(80%);
 }
 
 
-.pickup-text {
+.lp__method-pickup__text {
     background-color: #cf0000;
     color: black;
     font-size: clamp(1em, 2.5vw, 4em);
@@ -94,7 +146,7 @@ h1 {
     border-top-right-radius: 10px;
 }
 
-.pickup-img {
+.lp__method-pickup__img {
     background-color: #cf0000;
     padding-top: 5%;
     height: 70%;
@@ -105,62 +157,7 @@ h1 {
     
 }
 
-.delivery-method.delivery {
-   margin-left: 15px;
-    
-    
-}
-
-.delivery-method.delivery:active {
-    padding: 1%;
-}
-
-.delivery-method.delivery:hover {
-    filter: brightness(80%);
-}
-
-
-
-.delivery-text {
-    background-color: #175f92;
-    color: black;
-    font-size: clamp(1em, 2.5vw, 4em);
-    padding-top: 5%;
-    height: 100%;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.delivery-img {
-    background-color: #175f92;
-    height: 70%;
-    width: 100%;
-    padding-top: 5%;
-    object-fit: contain;
-    justify-self: center;
-    padding-bottom: 40%;
-}
-
-.delivery-window-title {
-    align-self: center;
-    font-size: 4vh;
-    color: black;
-    
-}
-
-.delivery-next-img {
-    padding-top: 1%;
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    background-color: #09273c;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-bottom: 1%;
-}
-
-.pickup-next-img {
+.lp__pickup-continue_icon {
     padding-top: 1%;
     height: 100%;
     width: 100%;
@@ -170,3 +167,5 @@ h1 {
     border-bottom-right-radius: 10px;
     padding-bottom: 1%;
 }
+
+

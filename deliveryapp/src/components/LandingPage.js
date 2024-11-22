@@ -25,21 +25,21 @@ function LandingPage() {
     return(
         <div className="landing-page" id="landing-page">
             <Header class="header" role="banner"/>
-            <main className="main">
+            <main className="lp__main">
             
-                <div className="delivery-window">
+                <div className="lp__order-window">
 
-                    <h1 className="delivery-window-title">&nbsp;&nbsp;Order Online</h1>
-                    <div className="delivery-methods-container">
-                        <button className="delivery-method delivery" type="button" onClick={goToDeliveryPage}>
-                            <div className ="delivery-text">Delivery</div>
-                            <img className="delivery-img" src="./fast-delivery.png" alt="delivery-img"/>
-                            <img src="./delivery-next.png" className="next-img delivery-next-img" alt="delivery-next"/>
+                    <h1 className="lp__order-window__header">&nbsp;&nbsp;Order Online</h1>
+                    <div className="lp__ordering-methods__container">
+                        <button className="lp__order-method delivery"/*<--className delivery? */ type="button" onClick={goToDeliveryPage}>
+                            <div className ="lp__method-delivery__text">Delivery</div>
+                            <img className="lp__method-delivery__img" src="./fast-delivery.png" alt="delivery-img"/>
+                            <img src="./delivery-next.png" className="lp__delivery-continue__icon" alt="delivery-next"/>
                         </button>
-                        <button className="delivery-method pickup" type="button" onClick={goToPickUpPage}>
-                            <p className ="pickup-text">Pickup</p>
-                            <img className="pickup-img" src="./pickup.png" alt="pickup-img"/>
-                            <img src="./pickup-next.png" className="next-img pickup-next-img" alt="pickup-next"/>
+                        <button className="lp__order-method pickup"/*<--className pickup? */ type="button" onClick={goToPickUpPage}>
+                            <p className ="lp__method-pickup__text">Pickup</p>
+                            <img className="lp__method-pickup__img" src="./pickup.png" alt="pickup-img"/>
+                            <img src="./pickup-next.png" className="lp__pickup-continue_icon" alt="pickup-next"/>
                         </button>
                     </div>
                 </div>
