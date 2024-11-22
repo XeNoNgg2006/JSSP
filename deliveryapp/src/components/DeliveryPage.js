@@ -1,8 +1,16 @@
-
+import "./styles/DeliveryPage.css"
+import Header from "./Header.js"
+import Footer from "./Footer.js"
 
 function DeliveryPage() {
     return(
-        <h1>DeliveryPage</h1>
+        <div>
+        <Header/>
+        <main>
+            <h1>f</h1>
+        </main>
+        <Footer/>
+        </div>
         
     );
 }

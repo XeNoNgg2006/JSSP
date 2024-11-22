@@ -1,7 +1,7 @@
 .header-div {
     border:2px solid black;
     display: flex;
-    background-color: burlywood;
+    background-color: #1d4e89;
     height: 10vh;
     justify-content: space-between;
     
@@ -11,34 +11,35 @@
 
 
 .logo {
-    margin-left: 20px;
-    width: 100px;
+    margin-left: 1%;
+    width: 5%;
     align-self: unset;
 }
 
 .text {
     align-self: center;
+    font-size: clamp(1em, 2.5vw, 4em);
 }
 
 .end-group {
-    gap:10px;
+    gap: 12%;
     display: flex;
     align-self: center;
 }
 
 
 .btn {
-    height:5vh;
+    height: 5vh;
     background-color: aqua;
     border-radius: 10px;
     font-weight: bolder;
 }
 
 .signup {
-    width: 75px;
+    width: 5vw;
 }
 
 .login {
-    width: 75px;
-    margin-right: 5px;
+    width: 5vw;
+    margin-right: 3%;
 }
