@@ -1,5 +1,83 @@
-.delivery__main {
+.dp_main {
     display: flex;
+    justify-content: space-between;
     height:75vh ;
+    width: 100vw;
+}
+
+.back-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 5vh;
+    width: 4vw;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    margin-top: 3px;
+    margin-left: 3px;
+    border-radius: 15px;
+    background-color: grey;
+    border: 0;
+    opacity: 0.9;
+    font-weight: 900;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: aliceblue;
+}
+
+
+
+.dp_address-window {
+    display: grid;
+    margin-right: 36vw;
+    height: 40vh;
+    width: 30vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 20vh 10vh;
+    align-self: center; 
+    background-color: grey;
+    border-radius: 20px;
     
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.dp_adress-window__header {
+    align-self: center;
+    justify-self: start;
+    padding-left: 2%;
+}
+
+
+.dp_form-window {
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    padding-left: 1%;
+    padding-right: 1%;
+    gap: 5%;
+    
+}
+
+.dp_adress::placeholder {
+    font-size: 18px;
+    font-weight: 100;
+    
+    justify-self: center;
+}
+
+.dp_adress {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border: 0;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+    padding-left: 1%;
+}
+
+.dp_submit-adress {
+    height: 60%;
+    width: 98%;
+    border-radius: 8px;
+
+    justify-self: center;
+    align-self: center;
 }

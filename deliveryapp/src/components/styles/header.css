@@ -17,6 +17,8 @@
 }
 
 .text {
+    margin-left: 5%;
+    
     align-self: center;
     font-size: clamp(1em, 2.5vw, 4em);
 }
