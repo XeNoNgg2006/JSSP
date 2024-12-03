@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Protest+Revolution&display=swap');
+
 .header-div {
-    border:2px solid black;
+    
     display: flex;
-    background-color: #1d4e89;
-    height: 10vh;
+    background-color: #ffffff;
+    height: 80px;
+    
+    box-shadow: 0 1px 0.125rem 0 rgba(0, 0, 0, 0.13);
+
     justify-content: space-between;
     
 
@@ -12,15 +17,18 @@
 
 .logo {
     margin-left: 1%;
-    width: 5%;
+    height: auto;
+    padding-bottom: 4px;
     align-self: unset;
 }
 
 .text {
     margin-left: 5%;
-    
+    font-family: "Protest Revolution", 'Times New Roman', Times, serif;
+    color: black;
+    white-space: nowrap;
     align-self: center;
-    font-size: clamp(1em, 2.5vw, 4em);
+    font-size: 40px;
 }
 
 .end-group {
@@ -31,17 +39,18 @@
 
 
 .btn {
-    height: 5vh;
+    height: 40px;
     background-color: aqua;
     border-radius: 10px;
     font-weight: bolder;
 }
 
 .signup {
-    width: 5vw;
+    width: 80px;
+    white-space: nowrap;
 }
 
 .login {
-    width: 5vw;
+    width: 80px;
     margin-right: 3%;
 }

@@ -3,9 +3,12 @@
 }
 
 .footer-div {
-    background-color:#5d4037;
-    width: 100%;
-    height: 15vh;
+    background-color:rgb(255, 255, 255);
+    height: 130px;
     display: flex;
     justify-content: center;
+}
+
+.footer-text {
+    color: black;
 }
