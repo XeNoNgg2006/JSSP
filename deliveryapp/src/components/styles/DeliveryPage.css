@@ -25,19 +25,47 @@
 
 .dp_form-window {
     display: grid;
-    grid-template-rows: var(--grid-rows, repeat(1, 200px));
+    grid-template-rows: var(--grid-rows, repeat(1, 250px));
     padding-left: 1%;
     padding-right: 1%;
     gap: 10px;
     
 }
 
-.dp_address_inputs {
+.dp_hidden-form-window {
     display: grid;
-    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 100%;
     padding-left: 1%;
     padding-right: 1%;
     gap: 10px;
+    color: blue;
+}
+
+.dp_address_inputs {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px ;
+    padding-left: 1%;
+    padding-right: 1%;
+    gap: 10px;
+}
+
+.dp_submit-address {
+    height: 80%;
+    width: 100%;
+    border-radius: 8px;
+    visibility: inherit;
+    justify-self: center;
+    align-self: center;
+}
+
+.dp_another-address {
+    height: 90%;
+    width: 100%;
+    border-radius: 8px;
+    visibility: inherit;
+    justify-self: center;
+    align-self: center;
 }
 
 
@@ -56,13 +84,4 @@
     border-bottom: 2px solid black;
     font-size: 18px;
     padding-left: 1%;
-}
-
-.dp_submit-address {
-    height: 80%;
-    width: 100%;
-    border-radius: 8px;
-
-    justify-self: center;
-    align-self: center;
 }
