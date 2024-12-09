@@ -8,10 +8,10 @@ html {
     display: flex;
     justify-content: space-between;
     
-    min-height: calc(100vh - 80px - 130px);
+    min-height: calc(100vh - 80px - 170px);
     
     
-    background-color: blueviolet;
+    background-color: whitesmoke;
    
 }
 

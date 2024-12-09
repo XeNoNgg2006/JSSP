@@ -4,11 +4,35 @@
 
 .footer-div {
     background-color:rgb(255, 255, 255);
-    height: 130px;
-    display: flex;
+    height: 170px;
+    display: grid;
+    grid-template-rows: 100px ;
+    grid-template-columns: 150px 200px;
+    column-gap:30px;
     justify-content: center;
+    margin-left: 50px;
 }
 
 .footer-text {
     color: black;
+}
+
+.f_legal-window {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    
+    
+}
+
+.f_language-window {
+    height: fit-content;
+    
+}
+
+.f_copyright-window {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }

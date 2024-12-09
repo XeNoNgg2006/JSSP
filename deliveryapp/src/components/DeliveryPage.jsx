@@ -1,6 +1,6 @@
 import "./styles/DeliveryPage.css"
-import Header from "./Header.js"
-import Footer from "./Footer.js"
+import Header from "./jscomps/Header.js"
+import Footer from "./jscomps/Footer.js"
 import "./styles/components.css"
 import React from 'react';
 import { useNavigate } from 'react-router-dom';   

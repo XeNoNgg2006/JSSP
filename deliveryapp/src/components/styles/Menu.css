@@ -1,3 +1,53 @@
-h1 {
+.mp_h1-category {
     color: black;
+
 }
+
+.mp_main  {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+    overflow-y: scroll;
+    
+}
+
+.mp_menu-window {
+    padding-left: 20px;
+    
+}
+
+.mp_menu-pizzas {
+    display: flex;
+    flex-direction: column;
+}
+
+.mp_menu-category {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap:15px;
+    
+
+}
+
+.mp_item {
+    
+    height:350px;
+    width: 200px;
+    overflow:hidden;
+    background-color: white;
+    border-radius: 20px;
+    
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.mp_item-img {
+    
+    width: 250px;
+    
+}
+
+.mp_checkout-window {
+    background-color: aquamarine;
+    width: 300px;
+}
+

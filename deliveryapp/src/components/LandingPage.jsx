@@ -1,6 +1,6 @@
 import "./styles/LandingPage.css"
-import Header from "./Header.js"
-import Footer from "./Footer.js"
+import Header from "./jscomps/Header.js"
+import Footer from "./jscomps/Footer.js"
 
 
 import React from 'react';
@@ -18,7 +18,7 @@ function LandingPage() {
       };
 
     const goToPickUpPage = () => {
-        navigate('./PickUpPage');
+        navigate('./Menu');
         
     }
 
@@ -34,12 +34,12 @@ function LandingPage() {
                         <button className="lp__order-method delivery"/*<--className delivery? */ type="button" onClick={goToDeliveryPage}>
                             <div className ="lp__method-delivery__text">Delivery</div>
                             <img className="lp__method-delivery__img" src="./fast-delivery.png" alt="delivery-img"/>
-                            <img src="./next.png" className="lp__delivery-continue__icon" alt="delivery-next"/>
+                            <img src="./next.png" className="lp__delivery-continue lp_icon" alt="delivery-next"/>
                         </button>
                         <button className="lp__order-method pickup"/*<--className pickup? */ type="button" onClick={goToPickUpPage}>
                             <p className ="lp__method-pickup__text">Pickup</p>
                             <img className="lp__method-pickup__img" src="./pickup.png" alt="pickup-img"/>
-                            <img src="./next.png" className="lp__pickup-continue_icon" alt="pickup-next"/>
+                            <img src="./next.png" className="lp__pickup-continue lp_icon" alt="pickup-next"/>
                         </button>
                     </div>
                 </div>
