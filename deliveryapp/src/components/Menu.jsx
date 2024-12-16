@@ -12,9 +12,18 @@ function Menu() {
     return(
         <div className="menu-page">
         <Header/>
+        <nav>
+            <div>
+                
+            </div>
+        </nav>
         <main className="p_main mp_main">
+             
+
             <div className="mp_menu-window">
                 
+
+
                 <div className='mp_menu-pizzas'>
                     <h1 className="mp_h1-category">Pizzas</h1>
                         <div className="mp_menu-category">
