@@ -3,7 +3,7 @@ import React from "react";
 function PizzaOptions() {
     return(
         <div className="mp_pizza-options">
-        <select className='mpitem-size_select'>
+        <select className='mp_item-size_select'>
             <option className="mp_item-option">Medium (28cm)</option>
             <option className="mp_item-option">Classic (25cm)</option>
             <option className="mp_item-option">Large (32cm)</option>

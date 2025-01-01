@@ -9,7 +9,7 @@ html {
     justify-content: space-between;
     
     min-height: calc(100vh - 80px - 170px);
-    
+    padding-top: 80px;
     
     background-color: whitesmoke;
    

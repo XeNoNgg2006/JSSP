@@ -3,22 +3,40 @@
 
 }
 
+body {
+    scroll-behavior: smooth;
+
+}
+
+
 .mp_main  {
     display: flex;
     flex-direction: row;
     padding-right: 20px;
     overflow-y: scroll;
-    
+    min-height: calc(100vh - 80px - 35px - 170px);
 }
 
 .mp_menu-window {
     padding-left: 20px;
-    
+    padding-bottom: 5px;
+    margin-top: calc(3vh);
 }
 
-.mp_menu-pizzas {
+.mp_menu-window:hover {
+    cursor: pointer;
+}
+
+
+.mp_menu {
     display: flex;
     flex-direction: column;
+    scroll-margin-top: 110px; 
+}
+
+.mp_h1-category {
+    text-align: left;
+    padding-left: 10px;
 }
 
 .mp_menu-category {
@@ -41,13 +59,42 @@
 }
 
 .mp_item-img {
-    
+   
     width: 250px;
     
 }
 
 .mp_checkout-window {
     background-color: aquamarine;
-    width: 300px;
+    width: 350px;
+    height: 500px;
+    position: fixed;
+    left: calc(79vw);
+    top:calc(15vh);
 }
 
+.menu-nav {
+    position: fixed;
+    top: calc(8vh);;
+    justify-content: space-between;
+    
+    width: 99vw;
+    background-color: aliceblue;
+}
+
+.mp_nav-ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    height: 35px;
+}
+
+.mp_nav-li {
+    font-size: 1.64rem;
+}
+
+.mp_nav-li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
